@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Use this script as EA
-# This script is to pull the last password change date from Azure.
+# This script is to get the password expiration date of Azure account.
 # Do this changes: Jamf Pro Settings > System > Cloud identity providers > (Name of you Cloud IDP) > Mapping Tab > Edit > change the phone field with "Lastpasswordchangedatetime" save it.
+# Create EA to for Azure: Las password change
 # Create API client and API Role in jamf pro > Settings > System > API roles and clients
 # Client ID and secret used to authenticate to the Jamf Pro API
 # ONLY needs the "Read" privilege for the "Computer" object and nothing else
