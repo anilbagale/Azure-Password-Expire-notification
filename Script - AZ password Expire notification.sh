@@ -89,7 +89,7 @@ userChoice=$("$jamfHelper" -windowType "$windowType" -lockHUD -title "$title" -t
 if [ "$userChoice" == "0" ]; then
    echo "User clicked Reset."
    # Opening password reset URL in Safari
-   open -a Safari https://passwordreset.microsoftonline.com/
+   open -a Safari https://mysignins.microsoft.com/security-info/password/change
 # If user selects "Cancel"
 elif [ "$userChoice" == "2" ]; then
    echo "User clicked Cancel or timeout was reached; now exiting."
